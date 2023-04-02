@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Top 10 причин почему я самый лучший</title>
+    <style type="text/css">
+        body {
+            background-color: #f2f2f2;
+            font-family: Arial, sans-serif;
+            background-image: linear-gradient(to right, #FFC107, #e100ff);
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        #my-photo {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            object-position: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        #reasons-box {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            z-index: 9999;
+        }
+
+        #reasons-box h2 {
+            text-align: center;
+        }
+
+        #reasons-box ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+
+        #reasons-box li {
+            margin-bottom: 10px;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            background-color: #008CBA;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #005f6b;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Top 10 причин почему я самый лучший</h1>
+    <img id="my-photo"
+        src="https://sun9-80.userapi.com/impg/5z-DB894vevZjQHEOkz6NaHR2JR_8DyO4LZaMA/ua9hKJFqSb8.jpg?size=810x1080&quality=95&sign=3037777f1853bb8bd75de71eecc39a83&type=album"
+        alt="Моя фотография">
+    <button onclick="showReasons()">Показать причины</button>
+    <div id="reasons-box">
+        <h2>10 причин, почему я самый лучший:</h2>
+        <ul>
+            <li>Я умный</li>
+            <li>Я красивый</li>
+            <li>Я добрый</li>
+            <li>Я веселый</li>
+            <li>Я талантливый</li>
+            <li>Я спортивный</li>
+            <li>Я образованный</li>
+            <li>Я умею программировать</li>
+            <li>Я люблю животных</li>
+            <li>Я умею готовить вкусную еду</li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        function showReasons() {
+            document.getElementById("reasons-box").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
